@@ -19,6 +19,7 @@ try {
 {% endhighlight %}
 
 Här har vi en rolig bild
+
 ![bild](http://www.bitrebels.com/wp-content/uploads/2010/02/sandwich.png)
 
 Och för att testa att länkar ocskå funkar får jag väl helt enkelt länka hit till [danielsjovall.se][web-link].
