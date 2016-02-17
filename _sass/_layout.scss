@@ -1,0 +1,170 @@
+/**
+ * Site overall
+ */
+
+html, body{
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px;
+    padding-bottom: 40px;
+    background-color: $grey-color-light;
+}
+
+hr.style {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid $border-color;
+    border-bottom: 1px solid $grey-color;
+    min-height: 56px;
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+
+    &:hover {
+      color: $green-color;
+    }
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+.navbar-nav .active .page-link {
+  color: $green-color;
+}
+
+.page-link {
+  color: $grey-color-dark;
+  font-size: 18px;
+
+  &:hover {
+    color: $green-color;
+    background-color: inherit !important;
+  }
+}
+
+
+/**
+ * Index page
+ */
+.avatar {
+    padding-top: 5%;
+
+    .profile {
+        max-height: 190px;
+    }
+}
+
+.about-text {
+  padding-top: 20px;
+}
+
+
+/**
+ * Blog page
+ */
+.post-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.post {
+  max-width: calc(800px - (30px * 2));
+}
+
+.post-header {
+  padding-top: 15px;
+}
+
+.card {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.post-meta {
+  font-style: italic;
+  color: $grey-color;
+}
+
+.post-content {
+  padding-top: 20px;
+}
+
+.post-content img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/**
+ * Portfolio page
+ */
+.projects {
+  padding-top: 30px;
+}
+
+.project-card {
+  //margin-left: 10px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+  background-position: center;
+  background-size: cover;
+
+  .project-content {
+    padding-top: 200px;
+    height: 100%;
+  }
+}
+
+.card-text {
+  padding-top: 5px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+/**
+ * Site footer
+ */
+.footer {
+    height: 40px;
+    border-bottom: 5px solid $border-color;
+ }
+
+ .push {
+     height: 40px;
+ }
+
+.text-muted {
+    color: #6b6b6b;
+    text-align: center;
+}

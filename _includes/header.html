@@ -1,0 +1,37 @@
+<header class="site-header">
+
+  <div class="container">
+
+    <nav class="navbar">
+      <div class="navbar-header">
+        <a class="site-title" href="{{ site.baseurl }}/">
+            <i class="fa fa-home"></i>
+        </a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+            {% if my_page.url == page.dir %}
+              {% assign class = "active" %}
+            {% else %}
+              {% assign class = "" %}
+            {% endif %}
+            <li class="{{ class }}">
+              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
+                {{ my_page.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        <li>
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}/static/daniel_sjovall_cv.pdf">
+            CV
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
