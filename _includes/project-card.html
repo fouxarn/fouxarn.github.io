@@ -2,8 +2,13 @@
   <div class="project-card" style="background-image: url({{site.url}}/static/img/{{include.background}})">
     <div class="project-content">
       <div class="card-text">
-        <h4>{{include.title}}</h4>
-        <p>{{include.text}}</p>
+        <div class="vcenter">
+          <h4>{{include.title}}</h4>
+          <p>{{include.text}}</p>
+          {% if include.github != null %}
+            <a href="{{include.github}}"><i class="fa fa-github fa-3x"></i></a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
